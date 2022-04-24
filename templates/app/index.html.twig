@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home - FlaminGod{% endblock %}
+
+{% block body %}
+
+    <section>
+        <div class="presentation">
+            <h1>FlaminGOD</h1>
+            <p>The NFT FlaminGOD project is designed to generate 3333 NFTs of pink flamingos posing in various places.
+                <br><br>
+                Each flamingo poses, like a renaissance character, in a setting dominated by a mysterious mountain with two horns.
+            </p>
+            <a href="{{ path('app_collection') }}"><button class="bluebutton">See collection</button></a>
+        </div>
+        <div class="img_header">
+            <img src="{{ asset('img/nft1.png') }}" alt="">
+            <img src="{{ asset('img/nft2.png') }}" alt="">
+        </div>
+    </section>
+    <section class="section2">
+        <div class="caroussel flex center">
+            <div class="vertical">
+                <div class="slide1 flex column scroll-slide1">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                </div>
+            </div>
+
+
+            <div class="vertical ">
+                <div class="slide2 flex column  scroll-slide2">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft4.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft4.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft4.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                </div>
+            </div>
+            <div class="vertical">
+                <div class="slide3 flex column scroll-slide3">
+                    <img src="{{ asset('img/nft5.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft5.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft5.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft5.png') }}" alt="">
+                </div>
+            </div>
+            <div class="vertical scrollInvert">
+                <div class="slide4 flex column scroll-slide4">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft3.png') }}" alt="">
+                </div>
+            </div>
+            <div class="vertical scroll">
+                <div class="slide5 flex column scroll-slide5">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                </div>
+            </div>
+            <div class="vertical scrollInvert">
+                <div class="slide6 flex column scroll-slide6">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                    <img src="{{ asset('img/nft2.png') }}" alt="">
+                    <img src="{{ asset('img/nft1.png') }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="presentation2">
+            <h1>What is FlaminGOD ?</h1>
+            <p>“_Z_” is the username I got known by, while drawing and criticizing the Tunisian news under the dictatorship of Ben Ali since 2007.
+                <br>
+                My anonymity allowed me to escape the nets of the politics in place and preserve my freedom of speech.
+            </p>
+            <a href="{{ path("app_bio") }}"><button class="transparentbutton">Learn More</button></a>
+        </div>
+    </section>
+
+    <script>
+        let img_hover = document.querySelectorAll('img')
+
+    </script>
+{% endblock %}

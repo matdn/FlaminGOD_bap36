@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello NewsletterController!{% endblock %}
+
+{% block body %}
+<section class="newsletter">
+    <form method="post" class="flex column center">
+        <h1 class="h3 mb-3 font-weight-normal">Keep Contact </h1>
+        <p>In order to keep updated on the latest news, <br>please
+            register yourself for the newsletter.</p>
+        <input placeholder="mail" type="email"  name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+        <input placeholder="name" type="text"  name="name" id="inputName" class="form-control" autocomplete="name" required autofocus>
+        <input placeholder="phone" type="text" autocomplete="phone">
+
+        <div class="button flex center">
+            <button class="bluebutton" type="submit">
+                Submit
+            </button>
+
+        </div>
+    </form>
+</section>
+{% endblock %}

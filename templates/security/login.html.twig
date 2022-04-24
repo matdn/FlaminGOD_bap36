@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% block stylesheets %}
+        <link href="{{ asset('style/style.css') }}" type="text/css" rel="stylesheet" />
+    {% endblock %}
+    {% if app.user %}
+        <section class="account">
+            <div class="mb-3">
+                <a href="{{ path('app_logout') }}">Logout</a>
+            </div>
+        </section>
+    {% else %}
+        <section class="form flex center column" style="background-image: url('img/background_login.png')">
+            <form method="post" class="flex column center">
+                {% if error %}
+                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+                <h1 class="h3 mb-3 font-weight-normal">FlaminGOD</h1>
+                <input placeholder="mail" type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+                <input placeholder="password" type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+                <div class="button flex center">
+                    <a href="{{ path("app_register") }}"><div class="signin bluebutton flex center"> Sign In </div></a>
+                    <button class="transparentbutton" type="submit">
+                        Log In
+                    </button>
+                </div>
+            </form>
+        </section>
+    {% endif %}
+
+{% endblock %}

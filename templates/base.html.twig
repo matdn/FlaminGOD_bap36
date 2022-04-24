@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('img/logo_FlaminGOD_final.png') }}">
+        <script src="https://kit.fontawesome.com/4f473a0c14.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/jmi5kfn.css">
+        {% block stylesheets %}
+                <link href="{{ asset('style/style.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+
+        {% block javascripts %}
+
+        {% endblock %}
+
+
+            </head>
+    <body>
+        {% include "partial/nav.html.twig" %}
+        {% block body %}{% endblock %}
+        {% include "partial/footer.html.twig" %}
+        <script href="{{ asset('app.js') }}">
+            let star1 = document.getElementById("star1")
+            let star2 = document.getElementById("star2");
+            let star3 = document.getElementById("star3");
+            let viewAll = document.getElementById("viewAll")
+            let viewLess = document.getElementById("viewLess")
+            let first_collection = document.getElementById("first_collection")
+            let full_collection = document.getElementById("full_collection")
+
+
+            viewAll.addEventListener('click', function (){
+                first_collection.style.display = "none"
+                full_collection.style.display = "flex"
+            })
+            viewLess.addEventListener('click', function (){
+                full_collection.style.display = "none"
+                first_collection.style.display = "flex"
+            })
+        </script>
+    </body>
+
+</html>

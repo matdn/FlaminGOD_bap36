@@ -1,0 +1,508 @@
+@font-face {
+    font-family: "DUCKO DEMO";
+    src: url("fonts/DUCKODEMO.ttf") format("truetype");
+    font-family: "Gotham Book";
+    src: url("fonts/GothamBook.otf") format("opentype");
+}
+*{
+    padding: 0;
+    margin: 0;
+
+}
+img{
+    height: 200px;
+    border-radius: 60px;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.logo{
+    height: 80px;
+}
+h1{
+    font-family: "DUCKO DEMO";
+    font-size: 82px;
+    color: #E8431F;
+}
+h2{
+    font-family: poppins;
+    font-size: 42px;
+}
+h3{
+    font-family: poppins;
+    font-size: 18px;
+}
+header{
+    display: flex;
+    align-items: center;
+    width: 92%;
+    padding: 2% 4%;
+    height: 5vh;
+    position: fixed;
+    background-color: rgba(241, 245, 239, 0.62);
+    z-index: 6;
+}
+.header_collection{
+    padding: 40px 20px;
+}
+.header_collection img{
+    height: 280px;
+    width: 280px;
+    border-radius: 30px;
+}
+.header_collection p{
+
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+li{
+    list-style-type: none;
+    font-family: poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+li:hover{
+    color: #E8431F;
+}
+p{
+    font-family: poppins;
+    font-size: 25px;
+    padding: 7% 0;
+}
+section{
+    padding:10% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #F1F5EF;
+}
+form, h1, .button{
+    background-color: transparent;
+}
+.form{
+    gap:20px;
+    padding: 0;
+    height: 100vh;
+    font-family: poppins;
+}
+button, input, .signin{
+    width: 160px;
+    height: 50px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+input{
+    background-color: transparent;
+    border: solid 1.5px black;
+}
+.transparentbutton{
+    border: solid 2px #9BB5DF;
+    color: #9BB5DF;
+    font-size: 18px;
+    background-color: transparent;
+}
+.transparentbutton:hover{
+    background-color: #565FA8;
+    border: solid 2px #565FA8;
+    color: white;
+}
+.bluebutton:hover{
+    background-color: #565FA8;
+    border: solid 2px #565FA8;
+    color: white;
+}
+.bluebutton{
+    background-color: #9BB5DF;
+    border: none;
+    color: white;
+    width: 200px;
+}
+input{
+    width: 400px;
+    height: 48px;
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 21px;
+}
+input:focus{
+    border: solid 2px black;
+    outline:none;
+}
+button{
+    border: none;
+}
+.gap-2{
+    gap: 70px;
+}
+.gap-4{
+    gap: 200px;
+}
+.form h1{
+    color: black;
+    padding-bottom: 100px;
+}
+input::placeholder{
+    text-align: justify;
+    color: black;
+}
+.button{
+    width: 100%;
+    gap: 30px;
+    padding-top: 30px;
+}
+svg{
+    cursor: pointer;
+}
+.svg{
+    height: 30px;
+}
+.svg:hover{
+    fill: #E8431F;
+}
+.img_header{
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+.img_header img{
+    height: 350px;
+    width: 350px;
+    border-radius: 40px;
+    position: absolute;
+}
+.img_header img:nth-child(1){
+    top:0;
+    left: 0;
+}
+.img_header img:nth-child(2){
+    bottom:0;
+    right: 0;
+    opacity: 0.9;
+}
+.presentation{
+    width: 55%;
+}
+.presentation p{
+    font-weight: 700;
+}
+.presentation2{
+    text-align: left;
+    padding: 0 7%;
+}
+.presentation2 p{
+    font-weight: 700;
+    width: 70%;
+}
+.section2{
+    background-image: url("../img/background_caroussel.png");
+    background-size: cover;
+    overflow: hidden;
+    height: 40vh;
+}
+.section2 img{
+    height: 300px;
+}
+.login{
+    color: #9BB5DF;
+}
+.signin{
+    background-color: #9BB5DF;
+    color: white;
+}
+.collection{
+    background-color: #F1F5EF;
+    height: auto;
+    padding: 50px 0%;
+}
+.first_section{
+    height: 600px;
+    position: relative;
+    width: 100%;
+}
+.header_collection{
+    width: 60%;
+    padding: 40px    7%;
+    height: 350px;
+    background-color: #F1F5EF;
+    position: absolute;
+    bottom: -25%;
+    gap: 30px;
+}
+.header_collection h3{
+    font-size: 32px;
+    font-family: "DUCKO DEMO";
+}
+.header_collection p{
+    font-size: 18px;
+}
+.banière{
+    background-image: url("../img/banière.png");
+    width: 100%;
+    height: 400px;
+}
+#full_collection{
+    display: none;
+}
+.nft{
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 0 7%;
+}
+.bestSales{
+    display: block;
+    height: 450px;
+    width: auto;
+    background-color: #F1F5EF;
+    border-radius: 50px;
+    box-shadow: 0px 5px 20px rgba(147, 147, 147, 0.6);
+    padding: 20px 5%;
+}
+.bestSales h2{
+    font-family: "DUCKO DEMO";
+    margin-bottom: 20px;
+}
+.bestSales img{
+    border-radius: 20px;
+    height: 300px;
+}
+.single{
+    width: 250px;
+}
+.single img{
+    width: 300px;
+    border-radius: 25px;
+}
+.single .image{
+    position: relative;
+
+}
+.image img{
+    width: 200px;
+    height: 200px;
+}
+.single .heart{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.48);
+    height: 25px;
+    width: 80px;
+    border-radius: 50px;
+    gap: 5px;
+}
+.single p{
+    font-size: 14px;
+    color: white;
+}
+.single svg{
+    height: 20px;
+    fill: white;
+}
+svg,p{
+    background-color: transparent;
+}
+
+.price{
+    gap: 20px;
+}
+.eth{
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.eth p{
+    color: black;
+}
+.line{
+    width: 220px;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0 20px 0;
+}
+.line2{
+    width: 500px;
+}
+.stars svg{
+    fill: black;
+}
+.caroussel{
+    gap: 60px;
+}
+.caroussel img{
+    padding: 30px 0;
+}
+.slide{
+    background-color: transparent;
+}
+.slide1{
+    height: calc(400px * 6);
+}
+.slide1 img{
+    height: 400px;
+}
+.slide2 img{
+    height: 250px;
+    width: 250px;
+}
+.slide3 img{
+}
+.slide4 img{
+    height: 350px;
+}
+.slide5 img{
+    height: 250px;
+    width: 250px;
+}
+.slide6 img{
+    height: 450px;
+    width: 450px;
+}
+
+.scroll-slide1 {
+    animation: scrollSlide1 4s linear infinite;
+}
+.scroll-slide2 {
+    animation: scrollSlide2 6s linear infinite;
+}
+.scroll-slide3 {
+    animation: scrollSlide3 8s linear infinite;
+}
+.scroll-slide4 {
+    animation: scrollSlide4 6s linear infinite;
+}
+.scroll-slide5 {
+    animation: scrollSlide5 7s linear infinite;
+}
+.scroll-slide6 {
+    animation: scrollSlide6 4s linear infinite;
+}
+footer{
+    background-color: black;
+    color:white;
+    gap: 100px;
+    justify-content: center;
+    height: 300px;
+    padding: 7% 0;
+}
+footer p{
+    font-size: 16px;
+}
+.social svg{
+    fill: white;
+    height: 35px;
+}
+.social{
+    gap: 20px;
+}
+.section_bio{
+    background-image: url("../img/Glow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 7%;
+    height: auto;
+}
+.section_bio .text{
+    text-align: left;
+}
+.section_bio .text h2{
+    font-family: "DUCKO DEMO";
+    font-size: 52px;
+}
+.image_single{
+    height: 528px;
+    width: 528px;
+    border-radius: 40px;
+}
+.nft_description{
+    align-items: flex-start;
+}
+.section_single .eth{
+    height: 60px;
+    width: 150px;
+}
+.des{
+    padding: 0 10%;
+    width: 100%;
+    text-align: left;
+}
+.newsletter{
+    background-image: url("../img/Glow2.png");
+    background-size: cover;
+}
+@keyframes scrollSlide1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(920px);
+    }
+}
+
+@keyframes scrollSlide2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-620px);
+    }
+}
+
+@keyframes scrollSlide3 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(720px);
+    }
+}
+@keyframes scrollSlide4 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-820px);
+    }
+}
+@keyframes scrollSlide5 {
+     0% {
+         transform: translateY(0);
+     }
+     100% {
+         transform: translateY(620px);
+     }
+ }
+@keyframes scrollSlide6 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1020px);
+    }
+}
